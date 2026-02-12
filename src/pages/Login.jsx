@@ -70,7 +70,7 @@ const Login = () => {
                         <Input
                             label="Email Institutionnel"
                             type="email"
-                            placeholder="professeur@esi.inphb.ci"
+                            placeholder="professeur@inphb.ci"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             icon={<Mail className="w-5 h-5" />}
