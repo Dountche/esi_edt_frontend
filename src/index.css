@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@import '@fontsource/inter';
+@import '@fontsource/poppins';
+@import '@fontsource/roboto-mono';
+
+@config "../tailwind.config.js";
+
+:root {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #F8F9FA;
+  /* secondary-50 */
+  color: #34495E;
+  /* secondary-600 */
+}
+
+/* Custom Typography Utilities */
+.h1 {
+  @apply font-heading text-4xl font-bold text-esi-700;
+}
+
+.h2 {
+  @apply font-heading text-3xl font-semibold text-esi-600;
+}
+
+.h3 {
+  @apply font-heading text-2xl font-semibold text-secondary-700;
+}
