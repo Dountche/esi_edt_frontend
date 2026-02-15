@@ -39,7 +39,7 @@ const Register = () => {
                     // Or we let them register without class and assign later? 
                     // Controller validation requires classe_id for students.
                     // Let's try fetching, if 401 we have a problem.
-                    const res = await api.get('/classes');
+                    const res = await api.get('/classes/public');
                     setClasses(res.data.data.classes);
                 } catch (error) {
                     console.error("Erreur chargement classes", error);
